@@ -45,8 +45,16 @@
         </div>
 <audio id="miMusica" autoplay loop src="https://nu.vgmtreasurechest.com/soundtracks/super-mario-maker-2-gamerip/cdjmhagf/14.%20Lesson%20Menu%20BGM.mp3"></audio>
 <script>
-  var audio = document.getElementById("miMusica");
-  audio.volume = 0.2;
+  const miAudio = document.getElementById("miMusica");
+        miAudio.volume = 0.1; 
+        const reproducirMusica = () => {
+            miAudio.play().then(() => {
+                console.log("Música iniciada con éxito");
+            }).catch(error => {
+                console.log("Error al reproducir: ", error);
+            });
+        };
+        window.addEventListener('click', reproducirMusica, { once: true });
 </script>
 </body>
 </html>
