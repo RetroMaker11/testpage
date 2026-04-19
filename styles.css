@@ -65,6 +65,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-inline: 0px;
+    min-height: 100vh;
 }
 .Titulo {
     color: rgb(255, 255, 255);
@@ -173,5 +174,6 @@ footer {
     padding: 20px;
     height: 80px;
     margin-top: 50px;
-    
+    display: flex;
+    flex: 1;
 }
