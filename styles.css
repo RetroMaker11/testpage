@@ -4,6 +4,7 @@
     font-weight: bold;
 }
 
+
 header:hover {
     color: rgb(57, 55, 55);
     font-family: "Lexend", sans-serif;
@@ -41,6 +42,7 @@ ol {
     font-family: "Urbanist", sans-serif;
     color:#e7ffff;
     font-weight: bold;
+    list-style-position: inside;
 }
 
 p {
@@ -49,6 +51,11 @@ p {
     font-weight: bold;
     color:#e7ffff
 }
+
+.parrafo1 {
+    margin-bottom: 40px;
+}
+
 body {
     /*background: linear-gradient(rgb(144, 227, 211), rgb(117, 170, 239));*/
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),url(https://cdn.lospec.com/gallery/cats-in-the-blue-lake-731334.gif);
@@ -56,14 +63,15 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-top: 0px;
+    margin-bottom: 0px;
     margin-inline: 0px;
-    padding-inline: 20px;
 }
 .Titulo {
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: "Lexend";
     font-size: 50px;
+    font-weight: bold;
     width: 100%;
     min-width: fit-content;
     display: block;
@@ -72,13 +80,13 @@ body {
     background-color: rgba(0, 0, 0, 0.232);
     backdrop-filter: blur(10px);
     padding: 20px;
-    margin-bottom: 30px;
-    border: 2.5px solid rgb(0, 0, 0);
-    border-radius: 15px;
+    margin-bottom: 40px;
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+    padding-inline: 20px;
 }
 
 .formulario {
-    background-color: rgba(0, 123, 255, 0.342);
+    background-color: rgba(0, 0, 0, 0.342);
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -98,8 +106,8 @@ body {
     border-radius: 15px;
 }
 
-.Content, .Content-Second{
-    background-color: rgba(25, 10, 125, 0.247);
+.Content{
+    background-color: rgba(15, 4, 90, 0.247);
     padding: 20px;
     border: 2.5px solid black;
     border-radius: 15px;
@@ -108,10 +116,15 @@ body {
     z-index: 10;
     backdrop-filter: blur(10px);
     margin-right: 20px;
+    align-items: center;
+    text-align: center;
+    
+    
 }
 
 
 .parrafo2 {
+    text-align: justify;
     color: rgba(255, 255, 255, 0.734);
     font-size: 20px;
     margin-top: 40px;
@@ -144,8 +157,21 @@ body {
 
 .formulario {
     margin-top: 20px;
+    width: 50%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
 }
 
 .Content__lista {
     font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(4, 0, 44, 0.762);
+    padding: 20px;
+    height: 80px;
+    margin-top: 50px;
+    
 }
