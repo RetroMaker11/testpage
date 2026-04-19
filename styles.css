@@ -4,13 +4,13 @@
     font-weight: bold;
 }
 
-h1:hover {
+header:hover {
     color: rgb(57, 55, 55);
     font-family: "Lexend", sans-serif;
     font-weight: bold;
 }
 
-h1:active {
+header:active {
     color: rgb(128, 249, 255);
     font-family: "Lexend", sans-serif;
     font-weight: bold;
@@ -44,7 +44,7 @@ ol {
 }
 
 p {
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Urbanist", sans-serif;
     font-weight: bold;
     color:#e7ffff
@@ -57,8 +57,7 @@ body {
     background-attachment: fixed;
     margin-top: 0px;
     margin-inline: 0px;
-    width: 100%;
-    max-width: 100vw;
+    padding-inline: 20px;
 }
 .Titulo {
     color: rgb(255, 255, 255);
@@ -66,40 +65,26 @@ body {
     font-family: "Lexend";
     font-size: 50px;
     width: 100%;
-    max-width: 100vw;
+    min-width: fit-content;
+    display: block;
+    justify-content: center;
     box-sizing: border-box;
-    background: linear-gradient(rgba(0, 197, 237, 0.674), rgba(0, 96, 222, 0.675));
+    background-color: rgba(0, 0, 0, 0.232);
     backdrop-filter: blur(10px);
     padding: 20px;
     margin-bottom: 30px;
-    margin-top: 0px;
-    border-bottom: 2.5px solid rgb(0, 0, 0);
-    width: auto;
-    box-sizing: border-box;
-}
-
-.header2, .header3, .parrafo, .parrafo1 {
-    width: 500px;
-    height: 150px;
-}
-
-.header2, .header3 {
-    background-color: rgba(0, 0, 0, 0.501);
-    padding: 10px;
-    margin-bottom: 30px;
+    border: 2.5px solid rgb(0, 0, 0);
     border-radius: 15px;
-    border: 2.5px solid #0084ff;
-    backdrop-filter: blur(10px);
-    
 }
 
-.parrafo {
+.formulario {
     background-color: rgba(0, 123, 255, 0.342);
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 15px;
     border: 2.5px solid rgb(0, 0, 0);
     height: 165px;
+    box-sizing: border-box;
 }
 .Juego {
     background-color: rgb(221, 228, 254);
@@ -112,20 +97,12 @@ body {
     padding: 10px;
     border-radius: 15px;
 }
-.parrafo1 {
-    background-color: rgba(0, 0, 255, 0.411);
-    padding: 10px;
-    border-radius: 15px;
-    border: 2.5px solid rgb(0, 0, 0);
-    height: 30px;
-}
 
 .Content, .Content-Second{
     background-color: rgba(25, 10, 125, 0.247);
-    padding: 10px;
+    padding: 20px;
     border: 2.5px solid black;
     border-radius: 15px;
-    width: 32.5vw;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
     margin: 10px;
     z-index: 10;
@@ -133,31 +110,42 @@ body {
     margin-right: 20px;
 }
 
-.Content-Second {
-    position: absolute;
-    left: 590px;
-    top: 125px;
-    width: 60vw;
-    padding: 10px;
-    border: 4px solid black;
-    border-radius: 15px;
-}
+
 .parrafo2 {
-    color: rgba(255, 255, 255, 0.734)
-}
+    color: rgba(255, 255, 255, 0.734);
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
 
 .parrafo2:hover {color: rgba(255, 255, 255, 0.736);}
+
+.Content__Mario, .Content__Indie {
+    display: flex;         
+    flex-direction: row; 
+    align-items: center;   
+    background-color: rgba(0, 0, 0, 0.501);
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 2.5px solid #0084ff;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    display: inline-block;
+    width: 45%;
+}
+
 .Imagen {
     width: 200px;
     height: 120px;
-    position: absolute;
-    z-index: 30;
-    top: 25px;
-    left: 290px;
     border-radius: 15px;
     border: 2px solid #0084ff;
 }
 
-.Imagen2 {
-    top: 25px
+.formulario {
+    margin-top: 20px;
+}
+
+.Content__lista {
+    font-size: 16px;
 }
